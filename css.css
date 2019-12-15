@@ -1,0 +1,152 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-size: 13px;
+}
+
+.slide{
+    height: 700px;
+}
+
+
+.menu{
+    margin: 20px 0;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+ul.list-info{
+    margin-left: -2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    /* height: 100%; */
+}
+ul.list-info li{
+    margin-left: 4%;   
+    list-style-type: none;
+    display: block;
+}
+span.address{
+    color: #F4F4F3;
+}
+span.phone{
+    color: #F4F4F3;
+}
+
+ul.list-menu{
+    list-style-type: none;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+ul.list-menu li{
+    margin-left: 4%;
+}
+ul.list-menu li a{
+    color: #F4F4F3;
+    text-decoration: none;
+}
+ul.list-menu li a:hover{
+    text-decoration: underline;
+}
+
+
+/* silde */
+
+/* body */
+/* dichvu */
+.dichvu{
+    padding: 50px 0;
+    margin-top: 20px;
+    background: #FBFBFB;
+}
+
+.dichvu-title{
+
+}
+
+.dichvu-title span{
+    font-weight: 1000;
+}
+
+ul.dichvu-tab{
+    list-style-type: none;
+    font-weight: 700;
+    margin: 0px;
+    padding: 0px;
+}
+
+ul.dichvu-tab li{
+    display: block;
+}
+
+ul.dichvu-tab li a{
+    display: inline;
+    text-decoration: none;
+    padding: 0;
+    margin-right: 50px;
+    font-size: 1.5rem;
+    font-weight: 1000;
+}
+
+.dichvu-content{
+    margin-top: 40px;
+}
+
+.dichvu-body-card{
+    
+}
+
+.border-dichvu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+
+.dichvu-body-card img{
+    width: 50px;
+}
+
+.dichvu-img{
+    width: 50px;
+}
+h3.title{
+    color: #2c2c2c;
+    font-size: 16px;
+    font-weight: 1000;
+}
+.more a{
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* sukien */
+.sukien{
+    background: #FFFFFF;
+}
+
+.sukien-box1{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.sukien-box1 h3{
+    text-transform: uppercase;
+    font-weight: 1000;
+}
+.slide-sukien{
+    display: flex;
+    flex-direction: row;
+}
+.slide-sukien img{
+    padding: 20px;
+}
