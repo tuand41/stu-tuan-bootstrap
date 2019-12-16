@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700,1000&display=swap');
 
 body{
@@ -6,6 +7,11 @@ body{
     font-family: 'Roboto',sans-serif;
     font-size: 13px;
 }
+
+@media screen and (max-width: 766px) {
+   .menu{display: none;}
+}
+  
 
 .slide{
     height: 700px;
@@ -33,6 +39,11 @@ ul.list-info li{
     list-style-type: none;
     display: block;
 }
+ul.list-info li a{
+    font-weight: bold;
+    color: #fff;
+    font-size: 1rem;
+}
 span.address{
     color: #F4F4F3;
 }
@@ -52,10 +63,10 @@ ul.list-menu li{
 }
 ul.list-menu li a{
     color: #F4F4F3;
-    text-decoration: none;
+    text-decoration: none;   
 }
 ul.list-menu li a:hover{
-    text-decoration: underline;
+    /* text-decoration: none; */
 }
 
 
@@ -77,7 +88,9 @@ ul.list-menu li a:hover{
 }
 
 .dichvu-title span{
-    font-weight: 1000;
+    font-weight: 700;
+    font-size: 13px;
+    color: #D8D8D8;
 }
 
 ul.dichvu-tab{
@@ -247,7 +260,8 @@ img.tb-info-img{
 .gioithieu{
     padding: 40px 0;    
     background: #FBFBFB;
-    border-bottom: 0.1px groove #F1F1F1;
+    border: 0;
+    border-bottom: 1px solid rgba(0,0,0,.1);
 }
 
 .img-text{
@@ -301,6 +315,8 @@ footer{
 .footer-content{
     padding: 20px 0;
     position: relative;
+    border: 0;
+    border-bottom: 1px solid rgba(0,0,0,.1);
 }
 
 h3.title-footer{
@@ -374,4 +390,23 @@ ul.footer-follow li a i::before{
     position: absolute;
     top: 15%;
     left: 24%;
+}
+
+.footer-bottom{
+    padding: 20px 0;
+}
+
+.end{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+img.img-end{ 
+    width: 93px;
+    height: 24px;
+}
+.end p{
+    color: white;
+    font-size: 14px;
+    margin-bottom: 0px;
 }
