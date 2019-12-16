@@ -3,12 +3,10 @@ $(document).ready(function () {
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 5000,
     arrows: true,
-    prevArrow: '<button type="button" class="slick-prev"> abc </button>',
-    nextArrow: '<button type="button" class="slick-next"> abc </button>',
-    centerMode: true,
-    slidesToShow: 3,
-    slidesToScroll: 1
+    prevArrow: '<i class="fas fa-caret-left left-arrow"></i>',
+    nextArrow: '<i class="fas fa-caret-right right-arrow"></i>',
+    // centerMode: true,
   });
 });
