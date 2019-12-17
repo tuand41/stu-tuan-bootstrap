@@ -7,11 +7,8 @@ body{
 }
 
 @media screen and (max-width: 766px) {
-    body{
-        font-size: 6px;
-    }
-    .mb-left{
-        display: block; 
+
+    .mb-left{         
         width: 400px;
         float: left;
     }
@@ -35,21 +32,52 @@ body{
    img.img-lan{width: 23px;}
 
    i.fa-bars{color: #D29F34;}
+
+   .slide-banne h1{
+       font-size: 32px;
+   }
+   .slide-banne p{
+        font-size: 16px;
+   }
+
+   .sukien-box1 h2{
+       font-size: 22px;
+   }
+   .img-text h2{
+       font-size: 22px;
+   }
+
+   h3.title-footer{
+       font-size: 22px;
+   }
 }
 @media screen and (min-width: 767px) {
     body{
         font-size: 13px;
     }
     .mb-menu{
-        display: none;
+        display: none ;
     }
     img.img-lan{width: 23px;}
 
-    a.lang.dropdown-toggle, a.lang.dropdown-toggle:hover{
-        color: white;
-    }
     
+    a.lang.dropdown-toggle, a.lang.dropdown-toggle:hover{
+        color: white;        
+    }
+    a.dropdown-item{
+        font-size: 1.3vm;
+    }
     .mb-left{display: none;}
+    .slide-banne p{
+        font-size: 30px;
+    }
+    .slide-banne h1{
+        font-size: 40px;
+    }
+}
+
+a.lang.dropdown-toggle{
+    font-size: 1.3vw;
 }
 
 p.bg-light{
@@ -88,12 +116,12 @@ a.nav-link:hover{
     
 }
 .slide-banner p{
-    color: white;
-    font-size: 2rem;
+    color: white;    
     margin: 0px;
     text-align: center;
     white-space: nowrap;
     font-weight: 900;
+    font-size: 2.4vmax;
 }
 .slide-banner h1{
     color: white;
@@ -101,7 +129,7 @@ a.nav-link:hover{
     text-align: center;
     white-space: nowrap;
     font-weight: 900;
-    font-size: 3rem;
+    font-size: 4vmax;
 }
 
 .menu{
@@ -125,16 +153,16 @@ ul.list-info li{
     list-style-type: none;
     display: block;
 }
-ul.list-info li a{
-    font-weight: bold;
-    color: #fff;
-    font-size: 1rem;
-}
+
 span.address{
     color: #F4F4F3;
+    font-size: 1.4vw;
+    white-space: nowrap;
 }
 span.phone{
     color: #F4F4F3;
+    font-size: 1.4vmax;
+    white-space: nowrap;
 }
 
 ul.list-menu{
@@ -149,7 +177,8 @@ ul.list-menu li{
 }
 ul.list-menu li a{
     color: #F4F4F3;
-    text-decoration: none;   
+    text-decoration: none; 
+    font-size: 1.2vmax;  
 }
 ul.list-menu li a:hover{
     /* text-decoration: none; */
@@ -195,7 +224,7 @@ ul.dichvu-tab li a{
     text-decoration: none;
     padding: 0;
     margin-right: 50px;
-    font-size: 1.5rem;
+    font-size: 2vmax;
     font-weight: 1000;
     color: #9b9b9b;
 }
@@ -346,7 +375,7 @@ img.tb-info-img{
     overflow: hidden;
 }
 .tb-box-car h4{
-    font-size: 16px;
+    font-size: 14px;
     color: #0000ee;
     font-family: 'Roboto',sans-serif;
     font-weight: bold;
@@ -402,7 +431,23 @@ img.tb-info-img{
     height: 100;
     justify-content: space-around;
 }
-
+.dt-content a{
+    position: relative;
+    cursor: auto;
+}
+.dt-content a:before{
+    pointer-events: none;
+    position: absolute;
+    content: '';
+    top: 100%;
+    height: 10px;
+    width: 90%;
+    opacity: 0;
+    background: radial-gradient(ellipse at center,rgba(0,0,0,.35) 0%,transparent 80%)
+}
+.dt-content a:hover{
+    opacity: 1;
+}
 footer{
     /* padding-top: 20px; */
     background-color: #025B93;
@@ -418,7 +463,6 @@ footer{
 h3.title-footer{
     font-weight: bolder;
     text-transform: uppercase;
-    font-size: 1.5rem;
     color: white;
 }
 
