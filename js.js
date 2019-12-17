@@ -10,4 +10,8 @@ $(document).ready(function () {
     // centerMode: true,
   });
 
+  $('i.fa-bars').click(function(){
+    $('.mb-left').toggle("slow");
+  });
+
 });

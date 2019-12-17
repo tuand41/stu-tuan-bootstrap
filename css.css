@@ -15,7 +15,7 @@ body{
         width: 400px;
         float: left;
     }
-
+    .mb-left{display: none;}
     .content{
         overflow: hidden;
     }
@@ -36,13 +36,13 @@ body{
 
    i.fa-bars{color: #D29F34;}
 }
-@media screen and (min-width: 766px) {
+@media screen and (min-width: 767px) {
     .mb-menu{
         display: none;
     }
     img.img-lan{width: 23px;}
 
-    a.lang.dropdown-toggle{
+    a.lang.dropdown-toggle, a.lang.dropdown-toggle:hover{
         color: white;
     }
     
