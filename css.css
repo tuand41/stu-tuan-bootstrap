@@ -9,9 +9,66 @@ body{
 }
 
 @media screen and (max-width: 766px) {
+    
+    .mb-left{
+        display: block; 
+        width: 400px;
+        float: left;
+    }
+
+    .content{
+        overflow: hidden;
+    }
+
    .menu{display: none;}
+   .mb-menu{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        margin: 14px;        
+   }
+   
+   ul.mb-ul{
+       padding-left: 0px;
+   }
+   
+   img.img-lan{width: 23px;}
+
+   i.fa-bars{color: #D29F34;}
 }
-  
+@media screen and (min-width: 766px) {
+    .mb-menu{
+        display: none;
+    }
+    img.img-lan{width: 23px;}
+
+    a.lang.dropdown-toggle{
+        color: white;
+    }
+    
+    .mb-left{display: none;}
+}
+
+p.bg-light{
+    margin: 0;
+    text-align: center;
+    padding: 6px 0;
+    border: 0;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    text-transform: capitalize;
+}
+
+a.nav-link{
+    color: black;
+    border: 0;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    padding-left: 1em !important;
+}
+a.nav-link:hover{
+    background: white;
+    color: black;
+}
+
 
 .slide{
     height: 700px;

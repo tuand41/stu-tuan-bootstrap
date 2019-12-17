@@ -9,4 +9,5 @@ $(document).ready(function () {
     nextArrow: '<i class="fas fa-caret-right right-arrow"></i>',
     // centerMode: true,
   });
+
 });
