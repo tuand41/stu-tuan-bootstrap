@@ -1,15 +1,15 @@
 
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700,1000&display=swap');
-
 body{
     margin: 0;
     padding: 0;
     font-family: 'Roboto',sans-serif;
-    font-size: 13px;
+    
 }
 
 @media screen and (max-width: 766px) {
-    
+    body{
+        font-size: 6px;
+    }
     .mb-left{
         display: block; 
         width: 400px;
@@ -37,6 +37,9 @@ body{
    i.fa-bars{color: #D29F34;}
 }
 @media screen and (min-width: 767px) {
+    body{
+        font-size: 13px;
+    }
     .mb-menu{
         display: none;
     }
@@ -79,18 +82,26 @@ a.nav-link:hover{
 
 .slide-banner{
     position: absolute;
-    top: 50%;
+    top: 40%;
     z-index: 2;
     width: 100%;
     
 }
 .slide-banner p{
     color: white;
-    font-size: 34px;
+    font-size: 2rem;
     margin: 0px;
     text-align: center;
     white-space: nowrap;
     font-weight: 900;
+}
+.slide-banner h1{
+    color: white;
+    margin: 0px;
+    text-align: center;
+    white-space: nowrap;
+    font-weight: 900;
+    font-size: 3rem;
 }
 
 .menu{
@@ -186,7 +197,17 @@ ul.dichvu-tab li a{
     margin-right: 50px;
     font-size: 1.5rem;
     font-weight: 1000;
+    color: #9b9b9b;
 }
+
+ul.dichvu-tab li a:hover{
+    color: #145C90;
+}
+
+.active a{
+    color: #145C90 !important;
+}
+
 
 .dichvu-content{
     margin-top: 40px;
